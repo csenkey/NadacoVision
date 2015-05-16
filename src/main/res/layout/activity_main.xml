@@ -9,29 +9,59 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/customer_name"
-        android:layout_alignParentTop="true"
+        android:id="@+id/customer_lastname"
         android:layout_alignParentStart="true"
+        android:hint="@string/customer_lastname"
+        android:layout_toStartOf="@+id/view"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/customer_firstname"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:hint=""/>
+        android:hint="@string/customer_firstname"
+        android:layout_toEndOf="@+id/view" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/customer_name"
+        android:id="@+id/customer_email"
+        android:layout_below="@+id/customer_lastname"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignEnd="@+id/customer_firstname"
+        android:hint="@string/customer_email"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
+        android:id="@+id/customer_phone"
+        android:layout_below="@+id/customer_email"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:hint="@string/customer_phone"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/customer_phone"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
