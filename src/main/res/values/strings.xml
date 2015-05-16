@@ -11,5 +11,6 @@
     <string name="customer_zip">irányítószám</string>
     <string name="customer_city">város</string>
     <string name="customer_address">cím</string>
-    <string name="customer_birthday">születési dátum</string>
+    <string name="customer_birthday">születési dátum (ÉÉÉÉHHNN)</string>
+    <string name="customer_data">ügyfél adatok</string>
 </resources>

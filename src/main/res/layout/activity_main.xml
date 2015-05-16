@@ -57,11 +57,42 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
+        android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/customer_zip"
         android:layout_below="@+id/customer_phone"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/customer_lastname"
+        android:hint="@string/customer_zip"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_city"
+        android:layout_below="@+id/customer_phone"
+        android:layout_alignEnd="@+id/customer_firstname"
+        android:layout_toEndOf="@+id/view"
+        android:hint="@string/customer_city"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_address"
+        android:layout_below="@+id/customer_zip"
+        android:layout_alignEnd="@+id/customer_city"
+        android:layout_alignParentStart="true"
+        android:hint="@string/customer_address"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/customer_birthday"
+        android:layout_below="@+id/customer_address"
+        android:layout_alignEnd="@+id/customer_city"
+        android:layout_alignParentStart="true"
+        android:hint="@string/customer_birthday"/>
 
 
 </RelativeLayout>
