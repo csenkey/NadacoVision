@@ -4,6 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="btn_save">mentés</string>
+
     <string name="customer_lastname">családi név</string>
     <string name="customer_firstname">keresztnév</string>
     <string name="customer_email">email cím</string>
@@ -11,6 +13,6 @@
     <string name="customer_zip">irányítószám</string>
     <string name="customer_city">város</string>
     <string name="customer_address">cím</string>
-    <string name="customer_birthday">születési dátum (ÉÉÉÉHHNN)</string>
+    <string name="customer_birthday">születési dátum (ééééhhnn)</string>
     <string name="customer_data">ügyfél adatok</string>
 </resources>
